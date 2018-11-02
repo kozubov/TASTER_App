@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c60f24fe3f704925af47a8ed2435a170" Name="Diagram1" ZoomLevel="74" >
+        <EntityTypeShape EntityType="Tests_DB.Role" Width="1.5" PointX="2.75" PointY="1.125" FillColor="MediumBlue" />
+        <EntityTypeShape EntityType="Tests_DB.User" Width="1.5" PointX="4.625" PointY="1.125" FillColor="MediumBlue" />
+        <AssociationConnector Association="Tests_DB.UserRole" />
+        <EntityTypeShape EntityType="Tests_DB.Category" Width="1.5" PointX="4.625" PointY="4.75" FillColor="LightSkyBlue" />
+        <EntityTypeShape EntityType="Tests_DB.Test" Width="1.5" PointX="6.5" PointY="4.5" FillColor="LightSkyBlue" />
+        <AssociationConnector Association="Tests_DB.TestCategory" />
+        <EntityTypeShape EntityType="Tests_DB.TestCreator" PointX="2.5" PointY="3.125" Width="1.5" FillColor="192, 255, 255" />
+        <EntityTypeShape EntityType="Tests_DB.TestQuestion" Width="1.5" PointX="8.5" PointY="4.5" FillColor="LightSkyBlue" />
+        <AssociationConnector Association="Tests_DB.TestQuestionTest" />
+<<<<<<< HEAD
+        <EntityTypeShape EntityType="Tests_DB.TestQuestionAnswer" Width="2.125" PointX="11.125" PointY="5.25" FillColor="LightSkyBlue" />
+=======
+        
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; test
+        <AssociationConnector Association="Tests_DB.TestQuestionAnswerTestQuestion" />
+        <EntityTypeShape EntityType="Tests_DB.UserTest" Width="1.5" PointX="6.875" PointY="1.125" FillColor="CornflowerBlue" />
+        <AssociationConnector Association="Tests_DB.UserTestCreator" />
+        <AssociationConnector Association="Tests_DB.TestTestCreator" />
+        <AssociationConnector Association="Tests_DB.UserTestUser" />
+        <AssociationConnector Association="Tests_DB.UserTestTest" ManuallyRouted="false" >
+        </AssociationConnector>
+        <EntityTypeShape EntityType="Tests_DB.UserTestAnswer" Width="1.5" PointX="9.125" PointY="1.125" FillColor="CornflowerBlue" />
+        <AssociationConnector Association="Tests_DB.UserTestAnswerUserTest" />
+        <AssociationConnector Association="Tests_DB.UserTestAnswerTestQuestion" />
+        <AssociationConnector Association="Tests_DB.TestQuestionAnswerUserTestAnswer" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

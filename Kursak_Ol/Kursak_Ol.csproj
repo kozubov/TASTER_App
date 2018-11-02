@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA4528EB-D0A2-4B52-9CAA-743AC9FA19B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kursak_Ol</RootNamespace>
+    <AssemblyName>Kursak_Ol</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\Bunifu_for_WinForms\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Test.Designer.cs">
+      <DependentUpon>Add_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Test2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Test2.Designer.cs">
+      <DependentUpon>Add_Test2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>Tests_DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Test.Designer.cs">
+      <DependentUpon>Edit_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IResult.cs" />
+    <Compile Include="MyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pupil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pupil.Designer.cs">
+      <DependentUpon>Pupil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pupil_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pupil_Test.Designer.cs">
+      <DependentUpon>Pupil_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Result_For_Pupil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result_For_Pupil.Designer.cs">
+      <DependentUpon>Result_For_Pupil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Result_For_Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result_For_Teacher.Designer.cs">
+      <DependentUpon>Result_For_Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs">
+      <DependentUpon>Tests_DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Select_Question_To_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select_Question_To_Edit.Designer.cs">
+      <DependentUpon>Select_Question_To_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select_Test_To_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select_Test_To_Edit.Designer.cs">
+      <DependentUpon>Select_Test_To_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher.Designer.cs">
+      <DependentUpon>Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test.cs">
+      <DependentUpon>Tests_DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestCreator.cs">
+      <DependentUpon>Tests_DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestQuestion.cs">
+      <DependentUpon>Tests_DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestQuestionAnswer.cs">
+      <DependentUpon>Tests_DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tests_DB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tests_DB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tests_DB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tests_DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tests_DB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tests_DB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>Tests_DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserTest.cs">
+      <DependentUpon>Tests_DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserTestAnswer.cs">
+      <DependentUpon>Tests_DB.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_Test.resx">
+      <DependentUpon>Add_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Test2.resx">
+      <DependentUpon>Add_Test2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Test.resx">
+      <DependentUpon>Edit_Test.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Pupil.resx">
+      <DependentUpon>Pupil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pupil_Test.resx">
+      <DependentUpon>Pupil_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result_For_Pupil.resx">
+      <DependentUpon>Result_For_Pupil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result_For_Teacher.resx">
+      <DependentUpon>Result_For_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select_Question_To_Edit.resx">
+      <DependentUpon>Select_Question_To_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select_Test_To_Edit.resx">
+      <DependentUpon>Select_Test_To_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher.resx">
+      <DependentUpon>Teacher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EntityDeploy Include="Tests_DB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Tests_DB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Tests_DB.edmx.diagram">
+      <DependentUpon>Tests_DB.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\korganizer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Max.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\preloader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\indicator.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\preloader1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\sign_in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\552.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\logo_text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\logo_text_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Slider\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\edit.png" />
+    <None Include="images\add.png" />
+    <None Include="images\open.png" />
+    <Content Include="logo.ico" />
+    <Content Include="Tests_DB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Tests_DB.Context.cs</LastGenOutput>
+      <DependentUpon>Tests_DB.edmx</DependentUpon>
+    </Content>
+    <Content Include="Tests_DB.edmx.sql" />
+    <Content Include="Tests_DB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Tests_DB.cs</LastGenOutput>
+      <DependentUpon>Tests_DB.edmx</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
